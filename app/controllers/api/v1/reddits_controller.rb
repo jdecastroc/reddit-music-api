@@ -18,8 +18,10 @@ class Api::V1::RedditsController < Api::V1::BaseController
     
     private
     def set_params
-        if params[:reddit].present?
+        if params[:reddit].present? && !params[:reddit].empty?
             @reddits_url = params[:reddit].split('+')
+        else
+            @reddits_url = 0
         end
         
         params[:songs].present? ? @songs = params[:songs].to_i : @songs = 20
@@ -44,7 +46,7 @@ class Api::V1::RedditsController < Api::V1::BaseController
         if @random.include?("false")
             begin
             @reddits_url.each { |reddit|
-                @resources.push(Reddit.new(reddit, @order, @res_per_reddit))#TODODEEP el ultimo numero
+                @resources.push(Reddit.new(reddit, @order, @res_per_reddit))
             }
             rescue Exception => e
                 raise e
