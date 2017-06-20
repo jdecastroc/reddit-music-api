@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/jdecastroc/reddit-music-api.svg?branch=master)](https://travis-ci.org/jdecastroc/music-discoverer)
 # Reddit Music API
 
 Reddit Music API is a project done in order to learn deeply about Rails framework focusing on how to create a simple API. The application allows the user to get a list with youtube resources from their favorites [Reddits](www.reddit.com).
@@ -11,6 +12,7 @@ Reddit Music API is a project done in order to learn deeply about Rails framewor
 
 # Request Example
 This method returns a JSON object with the youtube resources
+
 Example: https://reddit-music-api.herokuapp.com/api/v1/r/jpop+kpop?songs=30&random=true&order=newest
 ## Parameters
 | Name | Type | Description |

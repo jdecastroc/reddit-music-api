@@ -5,6 +5,7 @@ source 'https://rubygems.org'
 gem 'rails', '5'
 
 gem 'rspec-rails'
+gem 'simplecov-json'
 
 gem 'rack-cors'
 # Use sqlite3 as the database for Active Record
@@ -41,7 +42,7 @@ gem 'responders'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
-  #gem 'sqlite3'
+  gem 'sqlite3'
 end
 
 group :development do
