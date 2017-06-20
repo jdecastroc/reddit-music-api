@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/jdecastroc/reddit-music-api.svg?branch=master)](https://travis-ci.org/jdecastroc/music-discoverer)
+[![Build Status](https://travis-ci.org/jdecastroc/reddit-music-api.svg?branch=master)](https://travis-ci.org/jdecastroc/music-discoverer)[![codecov](https://codecov.io/gh/jdecastroc/reddit-music-api/branch/master/graph/badge.svg)](https://codecov.io/gh/jdecastroc/reddit-music-api)
 # Reddit Music API
 
 Reddit Music API is a project done in order to learn deeply about Rails framework focusing on how to create a simple API. The application allows the user to get a list with youtube resources from their favorites [Reddits](www.reddit.com).
